@@ -295,16 +295,24 @@ body {
     background-position: center;
 }
 
+.top-slider .slides {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 .top-slider .slides li {
-    margin-bottom: 20px; /* Adjust the value to increase or decrease the space */
-    padding: 15px; /* Optional: Adds padding inside each item */
-    border: 2px solid var(--border-color); /* Adjust the border thickness and color as needed */
-    border-radius: 10px; /* Adjust this value for more or less curved edges */
-    background-color: #ffffff; /* Optional: Adds a background color inside the border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    width: 90%;
+    margin: 0 auto 20px auto; /* Centers the item and adds bottom margin */
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-slider .slide-image {
-    border-radius: 10px; /* Ensure the image inside also has curved edges */
-    overflow: hidden; /* Ensures content inside stays within the border */
+    border-radius: 10px;
+    overflow: hidden;
 }
+
