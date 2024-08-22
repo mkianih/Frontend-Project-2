@@ -1,0 +1,296 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --highlight-color: #0056b3;
+    --border-color: #cccccc;
+    --footer-bg-color: #333333;
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-medium: 1rem; /* 16px */
+    --font-size-large: 1.5rem; /* 24px */
+    --font-size-xlarge: 2rem; /* 32px */
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: var(--background-color);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: white;
+    padding: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#club-name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: var(--font-size-xlarge);
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+#main-menu-wrapper {
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--font-size-large);
+    font-family: "Courier New", Courier, monospace;
+}
+
+#menu li a:hover {
+    color: var(--primary-color);
+}
+
+.page-about-us .container {
+    max-width: 800px;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.about-frame {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-services, .page-pricing, .page-store, .page-contact {
+    padding: 3.75rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: var(--font-size-large);
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+}
+
+.service-grid, .pricing-grid, .store-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the grid items */
+}
+
+.service-list, .pricing-list, .store-item {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+}
+
+.service-title, .pricing-title, .store-title {
+    font-size: var(--font-size-large);
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+}
+
+.pricing-list .price, .store-item .price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.25rem;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.25rem;
+}
+
+.pricing-features li {
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+    margin-bottom: 0.625rem;
+}
+
+.pricing-button .btn, .store-item .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    display: inline-block;
+}
+
+.pricing-button .btn:hover, .store-item .btn:hover {
+    background-color: var(--highlight-color);
+}
+
+.about-us-paragraph {
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cnt-form {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.cnt-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cnt-form label {
+    font-size: var(--font-size-medium);
+    margin-bottom: 0.5rem;
+}
+
+.cnt-form input[type="text"],
+.cnt-form input[type="email"],
+.cnt-form textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+    font-size: var(--font-size-medium);
+}
+
+.cnt-form textarea {
+    resize: vertical;
+    height: 150px; /* Adjust height as needed */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cnt-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    display: inline-block;
+}
+
+.cnt-btn:hover {
+    background-color: var(--highlight-color);
+}
+
+.info-box {
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.addrs, .email {
+    flex: 1;
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 1.25rem 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo img {
+    max-height: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.footer p {
+    font-size: var(--font-size-small);
+    margin: 0;
+}
+
+.responsive-img {
+    max-width: 100px;
+    height: auto;
+}
+
+.slide-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the gap between images as needed */
+}
+
+.slide-image {
+    width: 32%; /* Each image takes up about a third of the container */
+    height: 400px; /* Height of the images, adjust as needed */
+    background-size: cover;
+    background-position: center;
+}
