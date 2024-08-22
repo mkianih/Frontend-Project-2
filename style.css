@@ -294,7 +294,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 .top-slider .slides {
     list-style-type: none;
     padding-left: 0;
@@ -315,4 +314,3 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
-
